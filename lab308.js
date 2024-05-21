@@ -18,7 +18,7 @@ const isTwoOdd = (n1 % 2) + (n2 % 2) + (n3 % 2) + (n4 % 2) >= 2;
 // Check three: no number larger than 25
 // This time, we use the OR operator to check
 // if ANY of the numbers is larger than 25.
-const isOver25 = n1 > 25 || n2 > 25 || n3 > 25 || n4 > 25;
+const isUnder25 = n1 < 25 || n2 < 25 || n3 < 25 || n4 < 25;
 
 // Check four: all unique numbers
 // This is long, and there are more efficient
@@ -30,7 +30,7 @@ const isUnique = n1 != n2 && n1 != n3 && n1 != n4 && n2 != n3 && n2 != n4 && n3 
 // for convenience. Note how we negate isOver25 using
 // the ! operator. We could also have tested for 
 // "isUnder25" as an alternative.
-const isValid = isSum50 && isTwoOdd && !isOver25 && isUnique;
+const isValid = isSum50 && isTwoOdd && isUnder25 && isUnique;
 
 // Finally, log the results.
 console.log(isValid);
@@ -43,3 +43,32 @@ const dontDoThis = ((n1 + n2 + n3 + n4) == 50) &&
   ((n1 % 2) + (n2 % 2) + (n3 % 2) + (n4 % 2) >= 2) && 
   !(n1 > 25 || n2 > 25 || n3 > 25 || n4 > 25) && 
   (n1 != n2 && n1 != n3 && n1 != n4 && n2 != n3 && n2 != n4 && n3 != n4);
+
+
+//   when divisable by 5, each number should have no remainders,
+//meaning when using the % operator we should get a total of 
+// 0 for each, ensuring all numbers are divisable by 0
+const divBy5 = (n1 % 5) + (n2 % 5) + (n3 % 5) + (n4 % 5)
+
+if (divBy5 == 0) {
+ console.log(`Divisable by 5!`)
+} else {
+    console.log(`Not divisable by 5!`)
+}
+ 
+//variable and if statement ensuring the first number is greater than the last
+const overLast = (n1 > n4)
+
+if (overLast == true) {
+  console.log(`First number is greater than last!`)
+} else {
+  console.log(`Last number is greater than first!`)
+}
+
+// a chain of arithmetics that results in the remainder of the preceding result
+const chainFirst = n2 - n1
+
+const chainSecond = chainFirst * n3
+
+const chainThird = chainSecond % n4
+console.log(chainThird)
