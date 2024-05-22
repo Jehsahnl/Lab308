@@ -93,9 +93,9 @@ console.log(trip55, expense55, hours55)
 console.log(`Going 55mph, the whole trip will take ` + trip55 +` gallons`)
 
 if (expense55 < budget) {
-  console.log(`Going 55mph, the budget WILL Cover all fuel expenses! `)
+  console.log(`You will spend $` + expense55 + `. That means going 55mph, the budget WILL Cover all fuel expenses! `)
 } else {
-  console.log(`Going 55mph, the budget will NOT cover all fuel expenses`)
+  console.log(`You will spend $` + expense55 + `. That means going 55mph, the budget will NOT cover all fuel expenses`)
 }
 
 console.log(`Going 55mph, the whole trip will take ` + hours55 +` hours`)
@@ -109,10 +109,11 @@ console.log(trip60, expense60, hours60)
 console.log(`Going 60mph, the whole trip will take ` + trip60 +` gallons`)
 
 if (expense60 < budget) {
-  console.log(`Going 60mph, the budget WILL Cover all fuel expenses! `)
+  console.log(`You will spend $` + expense60 + `. That means going 60mph, the budget WILL Cover all fuel expenses! `)
 } else {
-  console.log(`Going 60mph, the budget will NOT cover all fuel expenses`)
+  console.log(`You will spend $` + expense60 + `. That means going 60mph, the budget will NOT cover all fuel expenses`)
 }
+
 console.log(`Going 60mph, the whole trip will take ` + hours60 +` hours`)
 
 // determing variables of the answer to each question for 75 mph
@@ -124,8 +125,9 @@ console.log(trip75, expense75, hours75)
 console.log(`Going 75mph, the whole trip will take ` + trip75 +` gallons`)
 
 if (expense75 < budget) {
-  console.log(`Going 75mph, the budget WILL Cover all fuel expenses! `)
+  console.log(`You will spend $` + expense75 + `. That means going 75mph, the budget WILL Cover all fuel expenses! `)
 } else {
-  console.log(`Going 75mph, the budget will NOT cover all fuel expenses`)
+  console.log(`You will spend $` + expense75 + `. That means going 75mph, the budget will NOT cover all fuel expenses`)
 }
 console.log(`Going 75mph, the whole trip will take ` + hours75 +` hours`)
+
