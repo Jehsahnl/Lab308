@@ -72,3 +72,60 @@ const chainSecond = chainFirst * n3
 
 const chainThird = chainSecond % n4
 console.log(chainThird)
+
+// Onto Part 2!
+console.log('Part2!')
+
+//defining variables for the scenario
+let mph55 = 30
+let mph60 = 28
+let mph75 = 23
+let totalMiles = 1500
+let budget = 175
+let cost = 3
+
+// determing variables of the answer to each question for 55 mph
+const trip55 = totalMiles / mph55
+const expense55 = trip55 * cost
+const hours55 = totalMiles / 55
+console.log(trip55, expense55, hours55)
+
+console.log(`Going 55mph, the whole trip will take ` + trip55 +` gallons`)
+
+if (expense55 < budget) {
+  console.log(`Going 55mph, the budget WILL Cover all fuel expenses! `)
+} else {
+  console.log(`Going 55mph, the budget will NOT cover all fuel expenses`)
+}
+
+console.log(`Going 55mph, the whole trip will take ` + hours55 +` hours`)
+
+// determing variables of the answer to each question for 60 mph
+const trip60 = totalMiles / mph60
+const expense60 = trip60 * cost
+const hours60 = totalMiles / 60
+console.log(trip60, expense60, hours60)
+
+console.log(`Going 60mph, the whole trip will take ` + trip60 +` gallons`)
+
+if (expense60 < budget) {
+  console.log(`Going 60mph, the budget WILL Cover all fuel expenses! `)
+} else {
+  console.log(`Going 60mph, the budget will NOT cover all fuel expenses`)
+}
+console.log(`Going 60mph, the whole trip will take ` + hours60 +` hours`)
+
+// determing variables of the answer to each question for 75 mph
+const trip75 = totalMiles / mph75
+const expense75 = trip75 * cost
+const hours75 = totalMiles / 75
+console.log(trip75, expense75, hours75)
+
+console.log(`Going 75mph, the whole trip will take ` + trip75 +` gallons`)
+
+if (expense75 < budget) {
+  console.log(`Going 75mph, the budget WILL Cover all fuel expenses! `)
+} else {
+  console.log(`Going 75mph, the budget will NOT cover all fuel expenses`)
+}
+console.log(`Going 75mph, the whole trip will take ` + hours75 +` hours`)
